@@ -230,6 +230,9 @@ body{
   margin-top: 10px;
   text-align: start;
 }
+#outputText{
+  margin-left: 10px;
+}
 /***************************/
 /*SEARCH AREEA STYLING*/
 /***************************/

@@ -179,13 +179,14 @@ body{
 }
 #instructions{
   margin-left: 50%;
-  height: 200px;
+  height: 250px;
   width: 80%;
   max-width: 500px;
   border-radius: 0px 0px 10px 10px;
   border: 5px solid #000;
   background: #CCFEE6;
   margin-bottom:15px ;
+  overflow: hidden;
 }
 #instructions-top{
   padding-left: 10px;
@@ -194,10 +195,31 @@ body{
   
 }
 #instructions-text{
+  height:100%;
   padding: 10px;
+  overflow-y: scroll;
 }
 
-#output-input{
+#output{
+  overflow: hidden;
+  color: white;
+  margin-left: 50%;
+  height: 300px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 0px 0px 10px 10px;
+  border: 5px solid #000;
+  background: #000000;
+  margin-bottom:15px ;
+}
+#output-top{
+  padding-left: 10px;
+  background: #D9D9D9;
+  border-bottom: 2px solid #000;
+  color:black
+}
+#input{
+  overflow: hidden;
   color: white;
   margin-left: 50%;
   height: 200px;
@@ -208,7 +230,7 @@ body{
   background: #000000;
   margin-bottom:15px ;
 }
-#output-input-top{
+#input-top{
   padding-left: 10px;
   background: #D9D9D9;
   border-bottom: 2px solid #000;
@@ -217,21 +239,30 @@ body{
 #inputArea{
   height: 90%;
 }
-#inputBox{
-  padding-bottom: 30%;
-  height:90%;
-  width: 90%;
-  outline: none;
-  text-decoration: none;
-  background: none;
-  border: none;
-  color: white;
-  margin-left: 10px;
-  margin-top: 10px;
-  text-align: start;
-}
+
 #outputText{
   margin-left: 10px;
+  overflow-y: scroll;
+}
+
+/**************************/
+/*****INPUT BUTTONS********/
+/**************************/
+.inputBtn{
+  color: white;
+  background: none;
+  border:1px solid white;
+  cursor: pointer;
+  padding: 2px;
+  margin: 1px;
+  width: fit-content;
+}
+#inputButtons{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  gap: 3px;
 }
 /***************************/
 /*SEARCH AREEA STYLING*/
